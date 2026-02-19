@@ -48,6 +48,26 @@ I built **PaperKnife** to solve this. It's a collection of tools that run entire
 
 ---
 
+### Run locally on Windows 11 (Desktop)
+
+PaperKnife now supports a native **Windows 11 desktop build** using Electron, while preserving the same local/offline PDF processing flow used in the web/app versions.
+
+1. Install **Node.js 20+**.
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+3. Run in desktop development mode:
+   ```bash
+   npm run desktop:dev
+   ```
+4. Build Windows installers/executables (`nsis` + `portable`):
+   ```bash
+   npm run desktop:build
+   ```
+
+Artifacts are generated under `dist/` (web build) and `dist/` subfolders such as `dist/win-unpacked` + installer outputs (Windows packages).
+
 ### Support the project
 
 PaperKnife is a solo project. It's open-source, ad-free, and tracker-free because I believe privacy is a right, not a luxury.
